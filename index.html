@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <!-- ===== CSS ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            background: #111;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            background: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .work-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ===== Hero Section ===== -->
+<div class="hero">
+    <h2>I am a Professional Designer</h2>
+    <p>Resume | PPT | Creative Designs | Invitation Cards</p>
+    <button onclick="hireMe()">Hire Me</button>
+</div>
+
+<!-- ===== About ===== -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a creative designer.  
+        I design professional resumes, presentations (PPT), invitation cards,
+        and many other creative designs.
+    </p>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+        <div class="service-box">Resume Design</div>
+        <div class="service-box">PPT Design</div>
+        <div class="service-box">Invitation Cards</div>
+        <div class="service-box">Creative Graphic Design</div>
+    </div>
+</section>
+
+<!-- ===== Work ===== -->
+<section id="work">
+    <h2>My Work</h2>
+    <div class="work-box">
+        <p>
+            You can add images of your resumes, PPTs,
+            invitation cards, and other designs here.
+        </p>
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: amanudan7676.7676@gail.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<!-- ===== JavaScript ===== -->
+<script>
+    function hireMe() {
+        alert("Thank you for your interest! Please contact me using the details below.");
+    }
+</script>
+
+</body>
+</html>
